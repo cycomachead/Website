@@ -1,0 +1,27 @@
+{
+  "name": "cycomachead.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "michaelball.co",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cycomachead/cycomachead.github.io.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cycomachead/cycomachead.github.io/issues"
+  },
+  "homepage": "https://github.com/cycomachead/cycomachead.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper": "^1.0.1"
+  }
+}
