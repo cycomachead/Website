@@ -2,27 +2,9 @@ source: .
 destination: ./_site
 # A blank URL breaks the XML escape tag in sitemap
 # url: https://michaelball.co
-#pygments: true
+url: ''
+baseurl: ''
 lsi: true
-#markdown: rdiscount
-
-excerpt_seperator: "<!--more-->"
-
-timezone: America/Los_Angeles
-
-exclude: [Berkeley Websites, Templates, tools, TODO.md, README.md, LICENSE, CNAME]
-
-#permalink: /:categories/:year/:i_month/:title/
-permalink: pretty
-paginate: 6
-#Roughly, 1 in 5 posts will be a text post?
-paginate_path: "posts/page:num"
-#paginate_files:
-# - blog.html
-# - archive.html
-
-#tag_page_layout: tag_page
-#tag_page_dir: tag
 
 title: Michael Ball
 author: Michael Ball
@@ -36,10 +18,47 @@ keywords: [Michael Ball, college, Cal,
     Berkeley, computer science, programming, cycomachead,
     cs education, teaching]
 
-
+flickr:
+    enabled: false
 # Social Links
-flickr: cycomachead
-github: cycomachead
-instagram: cycomachead
-linkedin: pub/michael-ball/43/18a/81/
-twitter: cycomachead
+social:
+    flickr: cycomachead
+    github: cycomachead
+    instagram: cycomachead
+    linkedin: pub/michael-ball/43/18a/81/
+    twitter: cycomachead
+links:
+    Berkeley: https://www2.eecs.berkeley.edu/Faculty/Homepages/mball.html
+
+### Google webmaster tools,
+#webmaster_verifications:
+#  google: verification_code
+#google_analytics: id
+
+
+excerpt_seperator: "<!--more-->"
+
+timezone: America/Los_Angeles
+
+exclude:
+    - TODO.md
+    - README.md
+    - LICENSE
+    - CNAME
+    - _src
+    - _images
+    - package.json
+    - package-lock.json
+    - config
+
+#permalink: /:categories/:year/:i_month/:title/
+permalink: pretty
+paginate: 6
+#Roughly, 1 in 5 posts will be a text post?
+paginate_path: "posts/page:num"
+#paginate_files:
+# - blog.html
+# - archive.html
+
+#tag_page_layout: tag_page
+#tag_page_dir: tag

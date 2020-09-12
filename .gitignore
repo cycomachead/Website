@@ -1,5 +1,13 @@
 .DS_Store
 ._*.*
+
+# Jekyll
 _site/
-node_modules/
 .jekyll-cache
+
+# JS
+node_modules/
+
+# Milo Theme
+dist/
+docs/
