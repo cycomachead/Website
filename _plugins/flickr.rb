@@ -19,7 +19,7 @@ flickr:
 
 =end
 
-require 'flickraw'
+# require 'flickraw'
 
 module Jekyll
 
@@ -29,7 +29,7 @@ module Jekyll
 		priority :low
 
 		def generate(site)
-			generate_photosets(site) if (site.config['flickr']['enabled']) 
+			generate_photosets(site) if (site.config['flickr']['enabled'])
 		end
 
 		def generate_photosets(site)
@@ -51,14 +51,14 @@ module Jekyll
       else
         photos = generate_photo_data(photoset, site)
       end
-  
+
       photos
-  
+
     end
 
     def generate_photo_data(photoset, site)
 
-			returnSet = Array.new 
+			returnSet = Array.new
 
 			FlickRaw.api_key = site.config['flickr']['api_key']
 			FlickRaw.shared_secret = site.config['flickr']['shared_secret']
@@ -109,7 +109,7 @@ module Jekyll
 		end
 
   end
-  
+
 	class FlickrPhoto
 
 		attr_accessor :title, :urlFullSize, :urlThumbnail, :thumbType
@@ -128,22 +128,22 @@ module Jekyll
 				'urlThumbnail' => urlThumbnail,
 				'thumbType' => thumbType
 			}
-      
+
 		end
 
 	end
 
   module Filters
-  
+
     def flickr_photo (id, size)
-    
-    
-        
+
+
+
       # open-uri RDoc: http://stdlib.rubyonrails.org/libdoc/open-uri/rdoc/index.html
       open(url) { |f| return f.read }
-    
+
     end
-    
+
   end
 
 end

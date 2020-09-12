@@ -1,7 +1,7 @@
 source: .
 destination: ./_site
 # A blank URL breaks the XML escape tag in sitemap
-url: https://michaelball.co
+# url: https://michaelball.co
 #pygments: true
 lsi: true
 #markdown: rdiscount
@@ -24,30 +24,22 @@ paginate_path: "posts/page:num"
 #tag_page_layout: tag_page
 #tag_page_dir: tag
 
-title: Michael Ball Photo
+title: Michael Ball
 author: Michael Ball
 version: 2.0
 copy-start: 2011
-copy-end: 2019
+copy-end: 2020
 # FIXME
-description: A (mostly) daily photo blog with a bit about Apple, Macs, college life, UC Berkeley, and anything I feel like sharing.
+description: A very work in progress site. Someday, I will write more...
 
-keywords: [iPhone, apps, photography, Quad Solver, Michael Ball, college, Cal,
-    Berkeley, computer science, programming, cycomachead, photo, apple, iOS,
-    macs]
+keywords: [Michael Ball, college, Cal,
+    Berkeley, computer science, programming, cycomachead,
+    cs education, teaching]
 
 
-# aboutme: michaelball
-# appstore: michaelball
-# facebook: quadsolver
+# Social Links
 flickr: cycomachead
 github: cycomachead
-# googleplus: 109987956810230671866
 instagram: cycomachead
 linkedin: pub/michael-ball/43/18a/81/
-# tumblr: cycomachead
 twitter: cycomachead
-# twitterposts: michaelbphotos
-# youtube: cycomachead
-
-
